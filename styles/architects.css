@@ -1,73 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-*{
-     font-family: 'Open Sans', sans-serif;
-     font-family: 'Work Sans', sans-serif; 
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 /* header style */
-header{
+header {
   background: rgba(255, 144, 14, 0.10);
-  padding:50px 250px ;
+  padding: 50px 250px;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
+
 }
 
-nav>ul{
-  list-style:none ;
+nav>ul {
+  list-style: none;
   display: flex;
- 
+
 }
 
 nav li {
   padding: 20px;
 }
 
-nav a{
-  text-decoration:none ;
+nav a {
+  text-decoration: none;
 }
 
-.banner{
+.banner {
   text-align: center;
 }
 
-.banner-title{
- color:  #131313;
-text-align: center;
-font-family: Work Sans;
-font-size: 40px;
-font-weight: 700;
-margin-bottom: 0;
+.banner-title {
+  color: #131313;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 0;
 
 }
 
-.banner description{
-color:  #727272;
-text-align: center;
-font-size: 16px;
-font-weight: 400;
-line-height: 26px; 
-margin-top: 10px;
+.banner description {
+  color: #727272;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 10px;
 }
 
-.btn-primary{
-border-radius: 8px;
-background: #FF900E;
-border: 0;
-padding: 20px 25px;
-color: #FFF;
-font: size 1.25em;
-cursor: pointer;
-margin-bottom: 50px;
+.btn-primary {
+  border-radius: 8px;
+  background: #FF900E;
+  border: 0;
+  padding: 20px 25px;
+  color: #FFF;
+  font: size 1.25em;
+  cursor: pointer;
+  margin-bottom: 50px;
 
 }
 
-.banner img{
+.banner img {
   width: 100%;
 }
 
@@ -75,82 +75,139 @@ margin-bottom: 50px;
 
 /* main related  styles */
 
-main{
+main {
   max-width: 1440px;
-  margin: 0  auto;
+  margin: 70px auto;
 }
 
-.teams-container{
+.teams-container {
   display: flex;
   align-items: center;
   margin-top: 20px;
-  gap:40px ;
+  gap: 40px;
 
 }
 
-.teams-img-container{
-   border-radius: 8px;
-display: grid;
-grid-template-columns: repeat(2,1fr);
-gap: 5px;
+.teams-img-container {
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
 }
-.team-title{
-color:  #727272;
-font-size:2rem;
-font-weight: 500;
-margin-bottom: 0px;
+
+.team-title {
+  color: #727272;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0px;
 
 }
 
-.teams-paragraph{
+.teams-paragraph {
   margin-top: 5px;
 
 }
 
-.teams-decription{
+.teams-decription {
   padding-left: 70px;
   padding-right: 70px;
-  color:  #727272;
+  color: #727272;
 }
-.our-span{
+
+.our-span {
   color: #131313;
 }
 
-.features-span{
+.features-span {
   color: #FF900E;
 
 }
 
+/* feature  style  started */
+.features {
+  display: flex;
+  margin-top: 100px;
+}
+
+.features-description {
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+ margin-bottom:15px;
+}
+
+/*facts  style  started*/
+
+.facts-card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.facts-card-container .card {
+  border-radius: 8px;
+  border: 1px solid #FF900E;
+  text-align: center;
+  padding: 30px;
+}
+
+.facts-card-container .card-title {
+  color: #727272;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+.facts-card-container .card-stats {
+  color: #424242;
+  font-size: 45px;
+  font-weight: 600;
+
+}
 
 /* header media  query  for small device     */
 
-@media screen  and (max-width:576px){
-  header{
+@media screen and (max-width:576px) {
+  header {
     padding: 15px;
   }
 
-  nav,.teams-container{
+  nav,
+  .teams-container,
+  .facts-card-container {
     flex-direction: column;
   }
-  .teams-img-container{
+
+  .teams-img-container {
     grid-template-columns: 1fr;
   }
-  .teams-decription{
+
+  .teams-decription,
+  .facts-card-container {
     padding-left: 70px;
     padding-right: 70px;
   }
 
 }
 
+.facts-card-container {
+  gap: 20px;
+}
+
+
+
+
 /* media query for tablets */
 
-@media screen and (min-width:577px) and (max-width:960PX){
-  header{
-   padding: 50px;
+@media screen and (min-width:577px) and (max-width:960PX) {
+  header {
+    padding: 50px;
   }
 
-  nav,.teams-container{
-   flex-direction: column;
+  nav,
+  .teams-container {
+    flex-direction: column;
   }
 
 }
