@@ -6,6 +6,17 @@
   font-family: 'Open Sans', sans-serif;
   font-family: 'Work Sans', sans-serif;
 }
+
+.btn-primary{ 
+   background-color:rgb(184, 110, 15);
+   padding: 15px  30px;
+   color: beige;
+   border:  none;
+   border-radius: 5px;
+   font-size: 1.25rem;
+   font-weight: 600;
+   cursor: pointer;
+}
 /* header  related  style */
 
 header{
@@ -46,4 +57,37 @@ font-size: 4rem;
 font-weight:500 ;
 color: black;
   
+}
+
+.banner img{
+  margin-top: 20px;
+width: 100%;
+}
+
+/* styles of   media  quaery */
+
+/* mobile  devices */
+
+@media screen and (max-width:576px) {
+      header{
+        padding: 20px;
+      }
+
+      nav{
+        flex-direction: column;
+      }
+}
+
+
+/* tablet or medium device */
+
+@media screen and(min-width:576px) and  (max-width:960px) {
+  
+  header{
+    padding: 50px;
+  }
+
+  nav{
+    flex-direction: column;
+  }
 }
